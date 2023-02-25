@@ -249,6 +249,70 @@ module.exports = {
       skipDryRun: true
     },
 
+    // Kava
+    KAVA: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://evm.kava.io");
+      },
+      network_id: 2222,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+      verify: {
+        apiUrl: 'https://explorer.kava.io/api',
+        apiKey: "none",
+        explorerUrl: 'https://explorer.kava.io',
+      },
+    },
+
+    // Kava Testnet
+    KAVATest: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://evm.testnet.kava.io");
+      },
+      network_id: 2221,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+      verify: {
+        apiUrl: 'https://explorer.testnet.kava.io/api',
+        apiKey: "none",
+        explorerUrl: 'https://explorer.testnet.kava.io',
+      },
+    },
+
+    // Canto
+    CANTO: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://canto.slingshot.finance");
+      },
+      network_id: 7700,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+      verify: {
+        apiUrl: 'https://evm.explorer.canto.io/api',
+        apiKey: "none",
+        explorerUrl: 'https://evm.explorer.canto.io/',
+      },
+    },
+
+    // Canto Testnet
+    CANTOTest: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://eth.plexnode.wtf");
+      },
+      network_id: 740,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+      verify: {
+        apiUrl: 'https://testnet-explorer.canto.neobase.one/api',
+        apiKey: "none",
+        explorerUrl: 'https://testnet-explorer.canto.neobase.one/',
+      },
+    },
+
     // ANKR RPC's (defaults kind of blow)
 
     // BSC
@@ -298,7 +362,7 @@ module.exports = {
     // FTM
     FTM: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, "https://rpc.ankr.com/fantom");
+        return new HDWalletProvider(process.env.MNEMONIC, "https://rpc.fantom.tools");
       },
       network_id: 250,
       confirmations: 2,
@@ -393,4 +457,6 @@ module.exports = {
     // }
   // }
 };
+
+
 
