@@ -25,20 +25,36 @@ Contracts need to remain in ./contracts
 
 Networks configured:
 * Developer (127.0.0.1)
-* Ethereum
+* Ethereium
+* Ethereium Goerli
 * Optimism
+* Optimism Goerli
 * Arbitum
+* Arbitum Goerli
 * Polygon
+* Polygon Mumbai
 * Binance Smart Chain
 * Binance Test Net
 * Avalanche
-* Avalanche (Fuji, testnet)
+* Avalanche Fuji, testnet
 * Fantom
 * Fantom Testnet
+* Kava
+* Kava Testnet
+* Canto
+* Canto Testnet
+* Celo
+* Celo Testnet
+* Palm
+* Palm Testnet
+* Cronos Beta
+* Cronos Beta Testnet
+* BitTorrent
+* Moonbeam
 
 Boiler plate setup... do not delete Migrations.sol or 1_initial_migration.js
 
-Current as of 01 Dec 2022
+Current as of 27 Mar 2023
 
 Pending updates:
 * More chains configured
